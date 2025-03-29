@@ -1,0 +1,92 @@
+ABISHPIUS
+ DataScientist-LLMEngineer
+ abishpius@gmail.com 412-482-2088 www.linkedin.com/in/abish-pius-424566b3/ https://abishpius.github.io/Abishpius/
+ SKILLS
+ Python R Bash SQL PySpark
+ TensorFlow PyTorch OpenCV
+ LLMS AWS Azure OCI Kedro
+ PromptEngineering Langchain Git
+ Docker
+ CERTIFICATIONS
+ AWSCertifiedMachineLearning
+Speciality
+ AWS
+ March2023–March2026
+ ProfessionalMachineLearning
+ EngineerCertification
+ Google
+ April2024–April2026
+ PROJECTS
+ DataScienceSubjectMatterExpert
+ EmeritusCourseConsult
+ November2021-May2022
+ •ConsultedasSMEfortwocourses,
+ CMU’sIntroductiontoComputerVision
+ andNYUT’sUsingDataScienceto
+ ManageCyberRisk
+ •Reviewedcoursematerialsforaccuracy
+ anddesigned/updatedquestionsand
+ exerciseswithinCanvasandCodio.
+ StreamlitWebApplication
+ DeepLearningFinancialTimeSeriesModel
+ September2020
+ •UsedTensorFlowtocreateaDLLSTM
+ modeltoforecastunivariatetimeseries
+ tospecifiedperiod.
+ •CreatedwebapplicationwithStreamlit
+ andhostedprojectascontaineron
+ Heroku.
+ MachineLearningCompetition
+ ICR-IdentifyingAge-RelatedConditions
+ August2023
+ •Predictedifapersonhasanyofthree
+ medicalconditionsmedicalconditions
+ usingOptunatotuneanensembleof
+ RandomForest,XGBandlightGBM
+ modelsinPython
+ •Placedintop9%ofsubmittedmodels
+ WORKEXPERIENCE
+ DataScientist
+ UnitedStatesSteelCorporation
+ Jan2021–Current Pittsburgh,PA
+ •LedGenerativeAIusecasesforUSSPrivateGPT,twoQ&Atools,
+ andanAIstructureddataAnalystallutilizinglangchain.Scopedand
+ improvedpromptstatementsplusutilizedfewshotlearningtofine
+ tuneoutcomes.Finalproductwasdemo’dinGoogleNext’23
+ Keynotespeech.
+ •Designedironoreprice6-monthforecastingmodelalongsidea
+ hedgingdecisionstrategywithexpectedreturns>10%comparedto
+ baseline.Productionalizedingestionandmodellingpipelinesusing
+ kedro.
+ •CountedpipeinventoryfordifferentproductionplantsusingAzure
+ customvisionandOraclevisiontoolwith98%precision.
+ FreelanceBigDataSolutionsExpert
+ UpWork
+ October2021–Current ID:freelancers/01d2db74395151722c
+ •Completed40+jobs,receivedExpertVettedstatus(top1%)and
+ earnedmembershipintheStanfordTalentCloudforsuccessful
+ analysisonSensomicsstartupdatawithinGCPVertexAI.
+ •ConsultedasaDataScienceLeadforTrajumAnalyticsreducing
+ medicalappointmentbookingchurn30%throughahostedmodel
+ endpointonGCPAIPlatformAPI.
+ •ConsultedVitroTechnologyCorporationinbuildingaPOCdashboard
+ forSNMPThingsboarddatainAWSutilizingS3,Redshiftand
+ QuickSight.
+ DataScientist
+ McGowanInstituteofRegenerativeMedicine
+ July2017–Sep2020 SouthSide,PA
+ •Pre-proccessedlargegenomicsdataparallellyonmultiplecompute
+ nodesusingbashandslurmscripting.Cleanedandvisualizedgene
+ sequencingdatausingRBioconductorandPythonScanpytodisplay
+ differencesinskeletalmusclehealth.
+ •UtilizedCellProfilerCNNstosegmentcellsfromfluorescent
+ microscopicimagesandusedrandomforestalgorithmstoclassify
+ youngversusoldmusclestemcellsaswellasPCAtoidentifydistinct
+ cellsubpopulations.
+ EDUCATION
+ MastersofScienceinComputationalBiomedicine
+ UniversityofPittsburgh
+ 2019–2020
+ Bachelor’sofScienceinNeuroscience
+ UniversityofPittsburgh
+ 2013–2017 Minors:Chemistry,Mat
