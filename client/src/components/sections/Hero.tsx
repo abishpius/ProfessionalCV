@@ -7,15 +7,19 @@ import profileImage from "../../assets/profile.jpg";
 const Hero = () => {
   const { toast } = useToast();
 
-  const handleDownloadResume = async () => {
+  const handleDownloadResume = () => {
     try {
-      const response = await apiRequest("GET", "/api/resume/download", undefined);
+      // Create a hidden anchor element to trigger the download
+      const link = document.createElement('a');
+      link.href = '/api/resume/download';
+      link.setAttribute('download', 'Abish_Pius_Resume.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       
-      // In a real application, this would trigger a file download
-      // For this example, we'll just show a toast to indicate success
       toast({
         title: "Resume Download",
-        description: "The resume would download here in a production environment",
+        description: "Your resume is being downloaded.",
       });
     } catch (error) {
       toast({

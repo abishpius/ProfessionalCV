@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertMessageSchema } from "@shared/schema";
 import { z } from "zod";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form endpoint
@@ -29,10 +30,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Endpoint to download resume (placeholder - in production, would serve actual PDF)
+  // Endpoint to download resume
   app.get("/api/resume/download", (req, res) => {
-    res.status(200).json({ 
-      message: "In a production environment, this would serve the actual resume PDF file." 
+    const resumePath = path.resolve(__dirname, "../public/assets/Abish_Resume_Gen_AI.pdf");
+    res.download(resumePath, "Abish_Pius_Resume.pdf", (err) => {
+      if (err) {
+        console.error("Error downloading resume:", err);
+        res.status(500).send("Error downloading resume");
+      }
     });
   });
 
