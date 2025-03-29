@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --plum-gold: #ffd700;
+  --plum-gold-dark: #e6c300;
+  --plum-gold-light: #ffeb99;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -9,5 +15,92 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .text-gold {
+    color: var(--plum-gold);
+  }
+  
+  .bg-gold {
+    background-color: var(--plum-gold);
+  }
+  
+  .border-gold {
+    border-color: var(--plum-gold);
+  }
+  
+  .btn-gold {
+    @apply bg-gold text-primary hover:bg-[var(--plum-gold-dark)] transition-colors;
+  }
+  
+  .accent-gold {
+    @apply border-l-4 border-[var(--plum-gold)];
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+  
+  .animate-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  .animate-bounce-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

@@ -27,8 +27,8 @@ const ProjectCard = ({ project, delay = 0 }: ProjectCardProps) => {
       className="overflow-hidden hover:shadow-lg transition-shadow duration-300 animate-fade-in"
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="h-48 bg-blue-300 flex items-center justify-center">
-        <div className="text-white">
+      <div className="h-48 bg-primary flex items-center justify-center">
+        <div className="text-gold">
           <IconComponent />
         </div>
       </div>
@@ -37,12 +37,12 @@ const ProjectCard = ({ project, delay = 0 }: ProjectCardProps) => {
         <p className="text-gray-700 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
-            <span key={tech} className="px-2 py-1 bg-blue-100 text-primary text-xs rounded">
+            <span key={tech} className="px-2 py-1 border border-gold text-primary text-xs rounded">
               {tech}
             </span>
           ))}
         </div>
-        <a href="#" className="text-primary hover:text-blue-600 transition-colors font-medium inline-flex items-center">
+        <a href="#" className="text-gold hover:text-[var(--plum-gold-dark)] transition-colors font-medium inline-flex items-center">
           <span>Read more</span>
           <ArrowRight className="ml-2 h-4 w-4" />
         </a>

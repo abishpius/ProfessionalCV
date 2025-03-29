@@ -15,7 +15,7 @@ const EducationCard = ({ education, delay = 0 }: EducationCardProps) => {
     >
       <CardContent className="p-6">
         <div className="flex items-center mb-4">
-          <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-gold mr-4">
             <GraduationCap size={24} />
           </div>
           <div>
@@ -25,7 +25,7 @@ const EducationCard = ({ education, delay = 0 }: EducationCardProps) => {
         </div>
         <div className="pl-20">
           <p className="font-medium">{education.institution}</p>
-          <p className="text-gray-600 mb-2">{education.period}</p>
+          <p className="text-gold font-medium mb-2">{education.period}</p>
           <p className="text-sm">{education.description}</p>
         </div>
       </CardContent>

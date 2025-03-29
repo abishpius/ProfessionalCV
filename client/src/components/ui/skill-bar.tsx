@@ -44,7 +44,7 @@ const SkillBar = ({ skill, delay = 0 }: SkillBarProps) => {
       </div>
       <div className="w-full bg-gray-100 rounded-full h-2.5">
         <div 
-          className="bg-green-500 h-2.5 rounded-full transition-all duration-1000 ease-out"
+          className="bg-gold h-2.5 rounded-full transition-all duration-1000 ease-out"
           style={{ 
             width: animate ? `${skill.progressPercentage}%` : '0%' 
           }}
