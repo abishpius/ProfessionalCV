@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FileDown } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import profileImage from "../../assets/profile.jpg";
 
 const Hero = () => {
   const { toast } = useToast();
@@ -32,9 +33,11 @@ const Hero = () => {
           <div className="text-center md:text-left flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-6 md:mb-0">
               <div className="w-48 h-48 md:w-56 md:h-56 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-200 flex items-center justify-center">
-                  <span className="text-5xl font-bold">AP</span>
-                </div>
+                <img 
+                  src={profileImage} 
+                  alt="Abish Pius" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="md:w-2/3 md:pl-12">
