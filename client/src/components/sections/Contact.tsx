@@ -56,41 +56,41 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-blue-500 text-white">
+    <section id="contact" className="py-20 bg-primary text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-sans font-bold mb-12 text-center">Get In Touch</h2>
+          <h2 className="text-3xl font-sans font-bold mb-12 text-center text-gold">Get In Touch</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="animate-fade-in">
-              <h3 className="text-xl font-sans font-semibold mb-6">Contact Information</h3>
+              <h3 className="text-xl font-sans font-semibold mb-6 text-gold">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-10 mr-4 text-blue-200">
+                  <div className="w-10 mr-4 text-gold">
                     <Mail size={24} />
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <a href={`mailto:${contactInfo.email}`} className="text-white hover:text-blue-200 transition-colors">
+                    <a href={`mailto:${contactInfo.email}`} className="text-white hover:text-gold transition-colors">
                       {contactInfo.email}
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 mr-4 text-blue-200">
+                  <div className="w-10 mr-4 text-gold">
                     <Phone size={24} />
                   </div>
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <a href={`tel:${contactInfo.phone}`} className="text-white hover:text-blue-200 transition-colors">
+                    <a href={`tel:${contactInfo.phone}`} className="text-white hover:text-gold transition-colors">
                       {contactInfo.phone}
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 mr-4 text-blue-200">
+                  <div className="w-10 mr-4 text-gold">
                     <Linkedin size={24} />
                   </div>
                   <div>
@@ -99,7 +99,7 @@ const Contact = () => {
                       href={`https://${contactInfo.linkedin}`}
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-white hover:text-blue-200 transition-colors"
+                      className="text-white hover:text-gold transition-colors"
                     >
                       {contactInfo.linkedin}
                     </a>
@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 mr-4 text-blue-200">
+                  <div className="w-10 mr-4 text-gold">
                     <Globe size={24} />
                   </div>
                   <div>
@@ -116,7 +116,7 @@ const Contact = () => {
                       href={`https://${contactInfo.website}`}
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-white hover:text-blue-200 transition-colors"
+                      className="text-white hover:text-gold transition-colors"
                     >
                       {contactInfo.website}
                     </a>
@@ -126,7 +126,7 @@ const Contact = () => {
             </div>
             
             <div className="animate-fade-in delay-200">
-              <h3 className="text-xl font-sans font-semibold mb-6">Send Me a Message</h3>
+              <h3 className="text-xl font-sans font-semibold mb-6 text-gold">Send Me a Message</h3>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                   <FormField
@@ -134,14 +134,14 @@ const Contact = () => {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel className="text-gold">Name</FormLabel>
                         <FormControl>
                           <Input 
                             {...field} 
-                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:border-blue-200 text-white" 
+                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-gold border-opacity-70 focus:outline-none focus:border-gold text-white" 
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-gold" />
                       </FormItem>
                     )}
                   />
@@ -151,15 +151,15 @@ const Contact = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel className="text-gold">Email</FormLabel>
                         <FormControl>
                           <Input 
                             {...field} 
                             type="email"
-                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:border-blue-200 text-white" 
+                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-gold border-opacity-70 focus:outline-none focus:border-gold text-white" 
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-gold" />
                       </FormItem>
                     )}
                   />
@@ -169,14 +169,14 @@ const Contact = () => {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel className="text-gold">Subject</FormLabel>
                         <FormControl>
                           <Input 
                             {...field} 
-                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:border-blue-200 text-white" 
+                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-gold border-opacity-70 focus:outline-none focus:border-gold text-white" 
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-gold" />
                       </FormItem>
                     )}
                   />
@@ -186,15 +186,15 @@ const Contact = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel className="text-gold">Message</FormLabel>
                         <FormControl>
                           <Textarea 
                             {...field} 
                             rows={4}
-                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:border-blue-200 text-white" 
+                            className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-10 border border-gold border-opacity-70 focus:outline-none focus:border-gold text-white" 
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-gold" />
                       </FormItem>
                     )}
                   />
@@ -202,7 +202,7 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="bg-white text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-colors font-medium px-6 py-6 rounded-lg"
+                    className="btn-gold w-full font-medium px-6 py-6 rounded-lg"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
