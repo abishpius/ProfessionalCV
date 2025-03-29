@@ -31,7 +31,7 @@ const Header = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }: HeaderPro
     }`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#home" className="text-2xl font-sans font-bold text-primary">
-          <span className="font-code">{"<"}</span>Abish Pius<span className="font-code">{">"}</span>
+          Abish Pius
         </a>
         
         {/* Mobile Menu Button */}
